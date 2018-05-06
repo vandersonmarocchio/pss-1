@@ -153,7 +153,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Contexto.cs" />
+    <Compile Include="Context\Contexto.cs" />
+    <Compile Include="Migrations\201805061644553_InitialCreate.cs" />
+    <Compile Include="Migrations\201805061644553_InitialCreate.Designer.cs">
+      <DependentUpon>201805061644553_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805062032180_Produto.cs" />
+    <Compile Include="Migrations\201805062032180_Produto.Designer.cs">
+      <DependentUpon>201805062032180_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805062035426_Produto1.cs" />
+    <Compile Include="Migrations\201805062035426_Produto1.Designer.cs">
+      <DependentUpon>201805062035426_Produto1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805062112238_Initial.cs" />
+    <Compile Include="Migrations\201805062112238_Initial.Designer.cs">
+      <DependentUpon>201805062112238_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Cidade.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\Logradouro.cs" />
+    <Compile Include="Models\Estado.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -215,6 +236,20 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805061644553_InitialCreate.resx">
+      <DependentUpon>201805061644553_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805062032180_Produto.resx">
+      <DependentUpon>201805062032180_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805062035426_Produto1.resx">
+      <DependentUpon>201805062035426_Produto1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805062112238_Initial.resx">
+      <DependentUpon>201805062112238_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

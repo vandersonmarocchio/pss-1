@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using SGCO.Context;
 using SGCO.Models;
 
 namespace SGCO.Controllers
@@ -46,7 +47,7 @@ namespace SGCO.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Descricao,Valor,tags")] Produto produto)
+        public ActionResult Create([Bind(Include = "ID,Descricao,Valor,Tags,Teste")] Produto produto)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +79,7 @@ namespace SGCO.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Descricao,Valor,tags")] Produto produto)
+        public ActionResult Edit([Bind(Include = "ID,Descricao,Valor,Tags,Teste")] Produto produto)
         {
             if (ModelState.IsValid)
             {
