@@ -9,7 +9,7 @@ namespace SGCO.Models
     public class Produto
     {
         [Key]
-        public Int32 ProdutoId { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public String Descricao { get; set; }

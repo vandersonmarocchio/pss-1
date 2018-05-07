@@ -10,7 +10,7 @@ namespace SGCO.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "SGCO.Context.Contexto";
         }
 

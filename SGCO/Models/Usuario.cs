@@ -9,7 +9,7 @@ namespace SGCO.Models
     public class Usuario
     {
         [Key]
-        public UInt64 UsuarioId { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public String Login { get; set; }
@@ -24,7 +24,7 @@ namespace SGCO.Models
         public String Sobrenome { get; set; }
 
         [Required]
-        public UInt64 CPF { get; set; }
+        public long CPF { get; set; }
 
         [Required]
         public String Telefone { get; set; }
@@ -35,7 +35,7 @@ namespace SGCO.Models
         [Required]
         public DateTime Nascimento { get; set; }
 
-        [Required][Display(Name = "Logradouro")]
-        public Logradouro LogradouroId { get; set; }
+        [Required]
+        public Logradouro Logradouro{ get; set; }
     }
 }

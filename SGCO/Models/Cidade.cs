@@ -9,12 +9,12 @@ namespace SGCO.Models
     public class Cidade
     {
         [Key]
-        public UInt32 CidadeId { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public String Nome { get; set; }
 
-        [Required][Display(Name = "Estado")]
-        public Estado EstadoId { get; set; }
+        [Required]
+        public Estado Estado { get; set; }
     }
 }

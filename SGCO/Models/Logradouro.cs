@@ -9,22 +9,22 @@ namespace SGCO.Models
     public class Logradouro
     {
         [Key]
-        public UInt32 LogradouroId { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public String Nome { get; set; }
 
         [Required]
-        public UInt32 Cep { get; set; }
+        public int CEP { get; set; }
 
         [Required]
-        public UInt32 Numero { get; set; }
+        public int Numero { get; set; }
 
         [Required]
         public String Bairro { get; set; }
 
-        [Required][Display(Name = "Cidade")]
-        public Cidade CidadeId { get; set; }
+        [Required]
+        public Cidade Cidade { get; set; }
 
         public String Referencia { get; set; }
 

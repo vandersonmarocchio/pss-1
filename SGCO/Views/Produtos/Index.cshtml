@@ -18,10 +18,7 @@
             @Html.DisplayNameFor(model => model.Valor)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Tags)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Teste)
+            @Html.DisplayNameFor(model => model.Tag)
         </th>
         <th></th>
     </tr>
@@ -35,15 +32,12 @@
             @Html.DisplayFor(modelItem => item.Valor)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Tags)
+            @Html.DisplayFor(modelItem => item.Tag)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Teste)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
     </tr>
 }

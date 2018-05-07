@@ -9,7 +9,7 @@ namespace SGCO.Models
     public class Estado
     {
         [Key]
-        public String EstadoId { get; set; }
+        public int Id { get; set; }
 
         [Required][StringLength(2, MinimumLength = 2)]
         public String UF { get; set; }

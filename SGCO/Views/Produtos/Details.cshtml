@@ -27,24 +27,16 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Tags)
+            @Html.DisplayNameFor(model => model.Tag)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Tags)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Teste)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Teste)
+            @Html.DisplayFor(model => model.Tag)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
