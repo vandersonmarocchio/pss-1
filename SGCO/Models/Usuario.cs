@@ -36,6 +36,6 @@ namespace SGCO.Models
         public DateTime Nascimento { get; set; }
 
         [Required]
-        public Logradouro Logradouro{ get; set; }
-    }
+        public Logradouro Logradouro { get; set; }
+    } 
 }
