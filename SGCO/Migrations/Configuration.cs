@@ -11,6 +11,7 @@ namespace SGCO.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             ContextKey = "SGCO.Context.Contexto";
         }
 
